@@ -23,6 +23,7 @@
           extend: {
             colors: {
               custom: "#ff4240",
+              custom2: "#131318",
             },
             fontFamily: {
               customFont: "Manrope",
@@ -78,10 +79,52 @@
           </ul>
         </div>
         <div class="navbar-end">
-          <a href="" class="btn bg-transparent border-none lg:mr-4"><i class="lg:text-2xl text-sm fa-solid fa-magnifying-glass"></i></a>
+          <a href="" class="btn bg-transparent border-none lg:mr-4 lg:block hidden"><i class="lg:text-2xl text-sm fa-solid fa-magnifying-glass"></i></a>
           <a class="text-white font-bold bg-custom lg:px-10 lg:py-3 py-1 px-2 lg:text-xl text-sm rounded-lg">Get Ticket</a>
         </div>
       </div>
     </nav>
+
+    <!-- banner area -->
+    <section class="container mx-auto mt-5">
+        <div class="carousel w-full relative container mx-auto">
+          <div id="slide1" class="carousel-item relative flex justify-center lg:w-full container mx-auto">
+            <img src="./Images/1.png" class="lg:w-full lg:h-auto min-w-[310px] lg:max-w-full max-w-[335px]" />
+            <div class="absolute flex gap-6 lg:justify-start justify-center transform -translate-y-1/2 lg:left-5  lg:bottom-6 bottom-0 ">
+                <a href="#slide2" class="btn btn-circle bg-custom2 text-white lg:text-2xl text-sm"><i class="fa-solid fa-chevron-left"></i></a> 
+                <a href="#slide2" class="btn btn-circle bg-custom2 text-white lg:text-2xl text-sm"><i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+            <div class="hidden lg:block card w-2/5 bg-base-100 shadow-xl lg:absolute  bottom-8 right-8 bg-custom2 text-white text-2xl">
+              <div class="card-body">
+                <h2 class="card-title text-2xl">Meet all the heroes from the field</h2>
+                <p class="text-[#ffffff99] text-base">Meet our real heros all over the world, they are here for their amazing job. Scroll down to see more.</p>
+              </div>
+            </div>
+          </div> 
+          <div id="slide2" class="carousel-item relative flex justify-center w-full">
+            <img src="./Images/b2.png" class="lg:w-full lg:h-auto h-[200px] min-w-[310px] lg:max-w-full max-w-[335px] rounded-lg lg:rounded-3xl" />
+            <div class="absolute flex gap-6 lg:justify-start justify-center transform -translate-y-1/2 lg:left-5  lg:bottom-6 bottom-0 ">
+                <a href="#slide1" class="btn btn-circle bg-custom2 text-white lg:text-2xl text-sm "><i class="fa-solid fa-chevron-left"></i></a> 
+                <a href="#slide1" class="btn btn-circle bg-custom2 text-white lg:text-2xl text-sm"><i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+            <div class="hidden lg:block card w-2/5 bg-base-100 shadow-xl absolute bottom-8 right-8 bg-custom2 text-white text-2xl">
+              <div class="card-body">
+                <h2 class="card-title text-2xl">Meet all the heroes from the field</h2>
+                <p class="text-[#ffffff99] text-base">Meet our real heros all over the world, they are here for their amazing job. Scroll down to see more.</p>
+              </div>
+            </div>
+          </div> 
+        </div>
+        <div class="w-full flex justify-center container mx-auto">
+
+          <div class="lg:hidden static mt-5 card w-4/5 min-w-80 max-w-96 bg-base-100 shadow-xl bg-custom2 text-white text-2xl">
+            <div class="card-body">
+              <h2 class="card-title text-base">Meet all the heroes from the field</h2>
+              <p class="text-[#ffffff99] text-sm">Meet our real heros all over the world, they are here for their amazing job. Scroll down to see more.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
