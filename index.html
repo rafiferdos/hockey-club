@@ -36,7 +36,6 @@
   </head>
   <body>
     <!-- navbar area -->
-    <!-- TODO: fix magnifying glass button related issue -->
     <nav class="container mx-auto">
       <div class="navbar bg-base-100 py-6">
         <div class="navbar-start">
@@ -80,7 +79,7 @@
           </ul>
         </div>
         <div class="navbar-end">
-          <a href="" class="btn bg-transparent border-none lg:mr-4 lg:block hidden"><i class="lg:text-2xl text-sm fa-solid fa-magnifying-glass"></i></a>
+          <a href="" class="btn bg-transparent border-none lg:mr-4 lg:block hidden shadow-none pt-2"><i class="lg:text-2xl text-sm fa-solid fa-magnifying-glass"></i></a>
           <a class="text-white font-bold bg-custom lg:px-10 lg:py-3 py-1 px-2 lg:text-xl text-sm rounded-lg">Get Ticket</a>
         </div>
       </div>
@@ -165,7 +164,7 @@
       <hr class="border-dashed bg-[#13131833] my-12 lg:my-20">
       <div class="w-4/5 lg:w-1/2 mx-auto text-center">
         <h2 class="lg:text-4xl text-2xl font-extrabold mb-4">Program Sections</h2>
-        <p class="lg:text-base text-sm lg:font-medium">We have a lot of programs in our arena of hockeys, you can explore more as much as you wanna to do.</p>
+        <p class="lg:text-base text-sm lg:font-medium opacity-60">We have a lot of programs in our arena of hockeys, you can explore more as much as you wanna to do.</p>
       </div>
       <hr class="border-dashed bg-[#13131833] my-12 lg:my-20">
       <div class="grid grid-cols-1 lg:grid-cols-12 grid-rows-3 lg:grid-rows-2 gap-6">
@@ -415,6 +414,91 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- get in touch area -->
+    <section class="container lg:w-10/12 w-11/12 mx-auto mb-24">
+      <hr class="border-dashed bg-[#13131833] my-12 lg:my-20">
+      <div class="w-4/5 lg:w-1/2 mx-auto text-center">
+        <h2 class="lg:text-4xl text-2xl font-extrabold mb-4">Get In Touch</h2>
+        <p class="lg:text-base text-sm lg:font-medium text-custom2 opacity-60">Interested to join us? please let us know then. And for that, subscribe to our contents with email and mobile number. We are active 24/7.</p>
+      </div>
+      <hr class="border-dashed bg-[#13131833] my-12 lg:my-20">
+
+      <div class="flex lg:flex-row flex-col gap-6">
+        <div class="lg:w-5/12 lg:p-12 p-4 border space-y-6 border-gray-200 rounded-xl">
+          <div class="card lg:py-8 py-4 lg:w-full bg-[#BCED6D1A] text-custom2">
+            <div class="card-body space-y-4">
+              <img src="./Images/Group 1171275317.png" alt="" class="w-12">
+              <p class="opacity-60">Phone Number :</p>
+              <h2 class="card-title font-extrabold">(+88) 01921-479294</h2>
+            </div>
+          </div>
+          <div class="card lg:py-8 py-4 lg:w-full bg-[#FDDD5F1A] text-custom2">
+            <div class="card-body space-y-4">
+              <img src="./Images/Group 1171275318.png" alt="" class="w-12">
+              <p class="opacity-60">Email :</p>
+              <h2 class="card-title font-extrabold">rafiferdos@gmail.com</h2>
+            </div>
+          </div>
+          <div class="card lg:py-8 py-4 lg:w-full bg-[#629CF31A] text-custom2">
+            <div class="card-body space-y-4">
+              <img src="./Images/Group 1171275321.png" alt="" class="w-12">
+              <p class="opacity-60">Location :</p>
+              <h2 class="card-title font-extrabold">160, School College Road</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:w-7/12 lg:p-2 p-4 grid lg:grid-cols-12 lg:grid-rows-5 grid-cols-1 grid-rows lg:gap-6 gap-5">
+
+          <!-- input for name -->
+            <label class="form-control w-full lg:col-span-6 col-span-1">
+              <div class="label">
+                <span class="label-text font-bold text-xl text-custom2">Your Name</span>
+              </div>
+              <input type="text" placeholder="Enter your full name" class="input input-bordered lg:h-16 lg:col-span-6 bg-[#13131808] border-none" />
+            </label>
+
+            <!-- input for email -->
+            <label class="form-control w-full lg:col-span-6 col-span-1">
+              <div class="label">
+                <span class="label-text font-bold text-xl text-custom2">Your Email</span>
+              </div>
+              <input type="email" placeholder="Enter your email" class="input input-bordered lg:h-16 w-full lg:col-span-6 bg-[#13131808] border-none" />
+            </label>
+
+            <!-- input for subject -->
+            <label class="form-control w-full lg:col-span-6 col-span-1">
+              <div class="label">
+                <span class="label-text font-bold text-xl text-custom2">Your Subject</span>
+              </div>
+              <input type="text" placeholder="Type here" class="input input-bordered w-full lg:h-16 lg:col-span-6 bg-[#13131808] border-none" />
+            </label>
+
+            <!-- input for phone number -->
+            <label class="form-control w-full lg:col-span-6 col-span-1">
+              <div class="label">
+                <span class="label-text font-bold text-xl text-custom2">Your Phone Number</span>
+              </div>
+              <input type="text" placeholder="Type here" class="input input-bordered w-full lg:h-16 lg:col-span-6 bg-[#13131808] border-none" />
+            </label>
+
+            <!-- input for message -->
+            <label class="form-control w-full lg:col-span-12 col-span-1 lg:row-span-6 row-span-12">
+              <div class="label">
+                <span class="label-text font-bold text-xl text-custom2">Message</span>
+              </div>
+              <textarea class="textarea textarea-bordered bg-[#13131808] border-none h-full" placeholder="Write your message"></textarea>
+            </label>
+
+            <!-- button -->
+            <div class="lg:col-span-12">
+
+              <button class="btn btn-block bg-custom text-xl font-bold text-white">Send Message</button>
+            </div>
+        <div/>
       </div>
     </section>
   </body>
